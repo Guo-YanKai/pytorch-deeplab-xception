@@ -59,10 +59,10 @@ SegmentationClass
 |_****.png
 ```
 
-1. Configure your dataset path in [mypath.py](https://github.com/jfzhang95/pytorch-deeplab-xception/blob/master/mypath.py). (12th line)
+1. Configure your dataset path in [mypath.py](https://github.com/jfzhang95/pytorch-deeplab-xception/blob/master/mypath.py). 
 ```
-elif dataset=='tooth':
-     return 'datasets/tooth/'
+12 elif dataset=='tooth':
+      return 'datasets/tooth/'
 ```
 2. Create your own dataset class in dataloaders/datasets/tooth.py,that is, Copy pascal.py and change NUM_CLASSES and dataset dir.
 ```
