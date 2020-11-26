@@ -102,7 +102,8 @@ SegmentationClass
     ```
    python train.py --backbone mobilenet  --workers 1 --batch-size 8 --gpu-ids 0 --checkname deeplab-mobilenet
 
-
+### Testing
+--in-path test_img_folder --ckpt path/to/model_best.pth.tar --backbone mobilenet
 
 ### Acknowledgement
 [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding)
