@@ -1,6 +1,6 @@
 # pytorch-deeplab-xception
 
-Train your own dataset with deeplab v3+. 
+Train your own dataset with deeplab v3+. My project aims to segment tooth from CBCT slices.
 
 
 
@@ -88,6 +88,7 @@ SegmentationClass
    python train.py --backbone mobilenet  --workers 1 --batch-size 8 --gpu-ids 0 --checkname deeplab-mobilenet
 
 ### Testing
+All the testing masks will save to the test_img_folder.
 ```
 python test.py --in-path test_img_folder --ckpt path/to/model_best.pth.tar --backbone mobilenet
 ```
