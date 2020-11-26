@@ -31,6 +31,7 @@ The code was tested with Anaconda and Python 3.6. After installing the Anaconda 
 Follow steps below to train your model:
 
 0. Create a datasets/tooth folder/.
+If your original data is the dicom format, please apply the [CBCT2voc](https://github.com/liangjiubujiu/CBCT2voc) toolkit to generate your own VOC dataset.
 ```
 ImageSets
 |_Segmentation
