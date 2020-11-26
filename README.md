@@ -5,7 +5,7 @@ Train your own dataset with deeplab v3+. My project aims to segment tooth from C
 
 
 ### Introduction
-This is a PyTorch(0.4.1) implementation of [DeepLab-V3-Plus](https://arxiv.org/pdf/1802.02611). It
+This is a PyTorch(1.6.0, tested) implementation of [DeepLab-V3-Plus](https://arxiv.org/pdf/1802.02611). It
 can use Modified Aligned Xception and ResNet as backbone. Currently, we train DeepLab V3 Plus
 using Pascal VOC 2012, SBD and Cityscapes datasets.
 
