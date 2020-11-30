@@ -54,6 +54,8 @@ SegmentationClass
 ```
 14 NUM_CLASSES = 2 # including background
 18 base_dir=Path.db_root_dir('tooth')
+50 _image = os.path.join(self._image_dir, line + ".png")
+51 _cat = os.path.join(self._cat_dir, line + ".png")
 ```
 3. Config your own dataloaders in dataloaders/__init__.py.
 ```
