@@ -82,7 +82,8 @@ SegmentationClass
 or
 54
 def get_tooth_labels():
-    return np.asarray([[0, 0, 0], [0, 255, 0],[255,0, 0],[0,0, 255]])
+    return np.asarray([[0, 0, 0], [0, 255, 0],[0,0, 255],[255,0, 0]])# it is opened by PIL.Image. so the order is black, green, blue and red.
+
 ```
 5. Config train.py
 ```
