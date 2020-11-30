@@ -74,12 +74,19 @@ SegmentationClass
         n_classes=2
         label_colours=get_tooth_labels()
        
-       def get_tooth_labels():
+54       def get_tooth_labels():
              return np.asarray([[0,0,0],[255,255,255]])
        # as the standard VOC dataset format, label is {0,1} in your own dataset rather {0,255}, this function can help to show {0,255} binary masks. 
+or
+54
+def get_tooth_labels():
+    return np.asarray([[0, 0, 0], [0, 255, 0],[255,0, 0],[0,0, 255]])
 ```
 5. Config train.py
 ```
+185 parser.add_argument('--dataset', type=str, default='tooth',
+                        choices=['pascal', 'coco', 'cityscapes','tooth'],
+                        help='dataset name (default: pascal)')
 275 'tooth':500
 291 'tooth':0.01
 ```
