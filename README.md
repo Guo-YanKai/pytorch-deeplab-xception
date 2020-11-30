@@ -105,7 +105,7 @@ All the testing masks will save to the test_img_folder.
                         help='crop image size')
 ```
 ```
-python test.py --in-path test_img_folder --ckpt path/to/model_best.pth.tar --backbone mobilenet
+python test.py --in-path test_img_folder --ckpt /home/liangjiubujiu/Project/pytorch-deeplab-xception-master/run/tooth/deeplab-mobilenet/model_best.pth.tar --backbone mobilenet
 ```
 
 ### Acknowledgement
