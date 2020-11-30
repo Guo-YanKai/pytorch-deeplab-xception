@@ -100,6 +100,10 @@ def get_tooth_labels():
 ### Testing
 All the testing masks will save to the test_img_folder.
 ```
+48    parser.add_argument('--num_classes', type=int, default=4,
+                        help='crop image size')
+```
+```
 python test.py --in-path test_img_folder --ckpt path/to/model_best.pth.tar --backbone mobilenet
 ```
 
